@@ -1,0 +1,224 @@
+.banner-quote {
+  margin: 30px auto;
+  height: 250px;
+  object-fit: cover;
+}
+
+@media (max-width: 575px) {
+  .banner-quote {
+    height: auto;
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.main-content .tabbed {
+  margin: 50px auto;
+  min-height: 750px;
+  margin-top: 0px;
+}
+
+.main-content .tabbed > input {
+  display: none;
+}
+
+.main-content .tabbed > label {
+  display: block;
+  float: left;
+  padding: 12px 20px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 0;
+  border: 1px solid var(--main-color);
+  border-bottom: 0;
+  font-family: var(--font-roboto);
+}
+
+@media (max-width: 575px) {
+  .main-content .tabbed > label {
+    border-bottom: 1px solid var(--main-color);
+    margin-bottom: 5px;
+    padding: 12px 15px;
+  }
+}
+
+.main-content .tabbed > label > a {
+  color: var(--main-color) !important;
+}
+
+.main-content .tabbed > label:hover,
+.main-content .tabbed > input:checked + label {
+  background: var(--main-color);
+  color: #fff !important;
+}
+
+.main-content .tabbed > label:hover > a,
+.main-content .tabbed > input:checked + label > a {
+  color: #fff !important;
+}
+
+.main-content .tabs {
+  clear: both;
+  perspective: 600px;
+}
+
+.main-content .tabs > div {
+  position: absolute;
+  border: 2px solid var(--main-color);
+  padding: 10px 30px 20px;
+  line-height: 1.4em;
+  opacity: 1;
+  transform: rotateX(0);
+  transform-origin: top center;
+  transition: opacity 0.3s, transform 1s;
+  z-index: 1;
+  width: 100%;
+}
+
+@media screen and (max-width: 575px) {
+  .main-content .tabbed {
+    width: 100%;
+  }
+  .main-content .tabs > div {
+    width: 100%;
+    border: none;
+    padding: 0;
+    opacity: 1;
+    position: relative;
+    transform: none;
+    margin-bottom: 60px;
+  }
+  .main-content .tabs > div h2 {
+    border-bottom: 2px solid #4ec6de;
+    padding-bottom: 0.5em;
+  }
+}
+
+.main-content .tabs > div {
+  padding: 10px;
+  padding-top: 0px;
+}
+
+.main-content .tabs > div .list-blog {
+  margin-top: 20px;
+}
+
+.main-content .tabs > div .list-blog .blogs {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 575px) {
+  .main-content .tabs > div .list-blog .blogs {
+    margin-bottom: 0px;
+  }
+}
+
+.main-content .tabs > div .list-blog .blogs .blog {
+  margin-bottom: 20px;
+  padding-right: 0px;
+}
+
+@media (max-width: 575px) {
+  .main-content .tabs > div .list-blog .blogs .blog {
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 0;
+  }
+}
+
+.main-content .tabs > div .list-blog .blogs .blog .card {
+  background-color: #fff;
+  border-radius: 7px;
+}
+
+.main-content .tabs > div .list-blog .blogs .blog .card:hover {
+  cursor: pointer;
+  box-shadow: var(--box-shadow-hover);
+}
+
+.main-content .tabs > div .list-blog .blogs .blog .card:hover .card-title a {
+  color: var(--orange-color) !important;
+}
+
+.main-content .tabs > div .list-blog .blogs .blog .card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+@media (max-width: 575px) {
+  .main-content .tabs > div .list-blog .blogs .blog .card img {
+    object-fit: cover;
+    height: 200px;
+  }
+}
+
+.main-content .tabs > div .list-blog .blogs .blog .card .card-body {
+  padding: 15px 10px;
+  font-family: var(--font-roboto);
+}
+
+.main-content .tabs > div .list-blog .blogs .blog .card .card-body .card-title {
+  margin-bottom: 0;
+}
+
+.main-content .tabs > div .list-blog .blogs .blog .card .card-body .card-title a {
+  font-size: 18px;
+  color: var(--main-color);
+  cursor: pointer;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+  -webkit-line-clamp: 3;
+  height: 60px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-transform: capitalize;
+}
+
+.main-content .tabs > div .list-blog .blogs .blog .card .card-body .card-text {
+  font-size: 15px;
+  color: #686f7a;
+  margin-bottom: 5px;
+}
+
+.main-content .tabs > div .list-blog .blogs .blog .card .card-body .front-stars i {
+  color: #ffb000;
+}
+
+.main-content .tabs > div .list-blog .blogs .blog .card .card-body .front-stars span {
+  color: #686f7a;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.main-content .tabs > div .list-blog .blogs .blog .card .card-body small {
+  font-size: 14px;
+  color: #6c757d !important;
+  padding: 10px 0;
+  padding-top: 0px;
+  display: block;
+}
+
+.main-content .tabs > div .list-blog .blogs .blog .card .card-body .info-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-content .tabs > div .list-blog .blogs .blog .card .card-body .info-price .old-price {
+  text-decoration: line-through;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.main-content .tabs > div .list-blog .blogs .blog .card .card-body .info-price .course-price {
+  font-size: 18px;
+  font-weight: 500;
+  color: red;
+}
+
+.main-content .tabs > div .list-blog .blogs .blog:nth-child(4n) {
+  padding-right: 15px;
+}

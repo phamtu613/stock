@@ -1,0 +1,176 @@
+.wp-content {
+  background-color: #f4f4f4;
+  min-height: 1300px;
+}
+
+@media screen and (max-width: 769px) {
+  .wp-content {
+    min-height: 1130px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .wp-content {
+    min-height: 1780px;
+  }
+}
+
+.wp-content .banner {
+  overflow: hidden;
+}
+
+.wp-content .banner img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 769px) {
+  .wp-content .banner img {
+    transform: scale(1.5);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .wp-content .banner img {
+    transform: scale(2);
+  }
+}
+
+.wp-content .contact {
+  transform: translateY(-80px);
+}
+
+@media screen and (max-width: 575px) {
+  .wp-content .contact {
+    transform: translateY(-25px);
+  }
+}
+
+.wp-content .contact .contact-call,
+.wp-content .contact .contact-chat {
+  padding: 40px;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 575px) {
+  .wp-content .contact .contact-call,
+  .wp-content .contact .contact-chat {
+    padding: 20px;
+  }
+}
+
+.wp-content .contact .contact-call img,
+.wp-content .contact .contact-chat img {
+  width: 60px;
+  height: 60px;
+}
+
+.wp-content .contact .contact-call .box-text,
+.wp-content .contact .contact-chat .box-text {
+  margin-top: 20px;
+}
+
+.wp-content .contact .contact-call .box-text h4,
+.wp-content .contact .contact-chat .box-text h4 {
+  color: #444;
+  font-size: 18px;
+}
+
+.wp-content .contact .contact-call .box-text p,
+.wp-content .contact .contact-chat .box-text p {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 769px) and (min-width: 575px) {
+  .wp-content .contact .contact-call .box-text p,
+  .wp-content .contact .contact-chat .box-text p {
+    min-height: 100px;
+  }
+}
+
+.wp-content .contact .contact-call .box-text p span,
+.wp-content .contact .contact-chat .box-text p span {
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+.wp-content .contact .contact-call .box-text a,
+.wp-content .contact .contact-chat .box-text a {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 7px 20px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.wp-content .contact .contact-call .box-text a:hover,
+.wp-content .contact .contact-chat .box-text a:hover {
+  background-color: #3c533c;
+}
+
+.wp-content .contact .contact-mail {
+  padding: 40px;
+  background-color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 575px) {
+  .wp-content .contact .contact-mail {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.wp-content .contact .contact-mail h3 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #333;
+}
+
+.wp-content .contact .contact-mail p {
+  color: #777;
+  font-size: 17px;
+}
+
+.wp-content .contact .contact-mail form {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 769px) {
+  .wp-content .contact .contact-mail form {
+    width: 100%;
+  }
+}
+
+.wp-content .contact .contact-mail form .btn-register {
+  background-color: var(--main-color);
+  border: none;
+}
+
+.wp-content .contact .contact-mail form .btn-register i {
+  padding-right: 10px;
+}
+
+.wp-content .contact .contact-mail form .btn-register:hover {
+  background-color: #3c533c;
+}
+
+.wp-content .contact .contact-map {
+  padding: 15px;
+  background-color: white;
+}
+
+.wp-content .contact .contact-map iframe {
+  height: 450px;
+}
+
+@media screen and (max-width: 769px) {
+  .wp-content .contact .contact-map iframe {
+    height: 475px !important;
+  }
+}
